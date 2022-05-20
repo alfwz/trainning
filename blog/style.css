@@ -17,6 +17,9 @@ header{
     margin: 1rem;
 }
 
+a{
+    color:rgb(95, 95, 218);
+}
 
 main{
     display: grid;
