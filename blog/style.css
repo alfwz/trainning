@@ -1,29 +1,82 @@
+@import url('https://fonts.google.com/specimen/Playfair+Display');
+
+body{
+    font-family: 'Playfair Display',serif;
+    width: 70%;
+    position: absolute;
+    margin:auto;
+    top:5px;
+    left:20px;
+    right:20px;
+    bottom:5px;
+}
+
 header{
     display:flex;
     justify-content: space-between;
-
+    margin: 1rem;
 }
+
 
 main{
     display: grid;
-    padding: .3rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
 }
+
 article{
-    border: 5px solid rgb(128, 128, 128, 0.5);
-    width: 45vw;
-    height: 40vh;
-    padding: 1em;
+    position: relative;
+    border: solid rgba(175, 175, 175, 0.5);
+    border-width: 5px 8px 5px 8px;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+article:hover{
+    border: 2px solid rgb(128, 128, 128, 0.2);
+    border-width: 3px 3px 3px 3px;
+    border-radius: 2%;
 }
 
 footer{
-    background-color: rgb(207, 205, 205);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: grey;
+    text-align: center;
+    background-color: rgb(246, 246, 246);
+    height:120px;
+    border-top:5px solid rgba(175, 175, 175, 0.5);
 }
 
+.page-name{
+    margin-top: 0;
+    text-decoration-line: underline;
+}
 
 .world{
     color:blue;
+    margin-top: 0;
 }
 
 .design{
     color:green;
+    margin-top: 0;
+}
+
+.post-title{
+    margin:5px 0px 0px 0px;
+}
+.date{
+    color:rgb(128, 128, 128);
+    margin-top: 2px;
+}
+
+.continue-read{
+    position:absolute;
+    bottom: 20px
+}
+
+.subscribe{
+    color:rgb(128, 128, 128);
 }
