@@ -1,0 +1,76 @@
+@import url('https://fonts.google.com/specimen/Playfair+Display');
+
+body{
+    font-family: 'Playfair Display',serif;
+    width: 70%;
+    position: absolute;
+    margin:auto;
+    top:5px;
+    left:20px;
+    right:20px;
+    bottom:5px;
+    font-size: 1.5rem;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+a{
+    color:rgb(95, 95, 218);
+}
+
+main{
+    display: grid;
+    grid-template-columns: minmax(500px, 75%) 1fr ;
+}
+
+
+
+a{
+    display: block;
+}
+
+section{
+    padding:2em;
+}
+.subscribe{
+    color:rgb(128, 128, 128);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: grey;
+    text-align: center;
+    background-color: rgb(246, 246, 246);
+    height:120px;
+    border-top:5px solid rgba(175, 175, 175, 0.5);
+}
+
+
+button{
+    display: inline;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 1.3rem;
+}
+
+.prev{
+    color:blue;
+    border-color: blue;
+}
+
+.next{
+    color:grey;
+    border-color: grey;
+}
+.page-choise{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
