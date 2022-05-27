@@ -1,21 +1,21 @@
 //element
-const input = document.querySelector('.searchbar__input')
+const input = document.querySelector('.searchbar-input')
 const searchButton=document.querySelector('.search-btn')
 const albumTemplate=document.querySelector('.albums')
 const albumsContainer=document.querySelector('.albums-container')
 const infoContainer = document.querySelector('.info')
-const loader = document.querySelector(".loader");
+const spinner = document.getElementById("spinner");
 
 
 //fetch
 function searchArtist(ARTIST_NAME) {
-    infoContainer.innerHTML=``
-    loader.style.display = "inline"
+    infoContainer.innerHTML=`loading....`
+    spinner.classList.add('show');
     fetch(`https://itunes.apple.com/search?term=${ARTIST_NAME}&media=music&entity=album&attribute=artistTerm&limit=200`)
         .then(res => res.json())
         .then(data => {
             console.log(data.results)
-            loader.style.display = "none"
+            spinner.classList.remove('show');
             data.results.forEach((album) => { render(album) })
             infoContainer.innerHTML=`${data.results.length} results for "${ARTIST_NAME}"`
         })
