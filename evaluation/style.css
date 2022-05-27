@@ -1,0 +1,76 @@
+body{
+    margin:0 auto;
+}
+
+.searchbar{
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    top:0;
+    width:100%;
+}
+
+.searchbar__input{
+    height: 10px;
+    width: 250px;
+    margin-right: 1em;
+    border-radius: 2rem;
+    padding: 0.5rem;   
+}
+
+.search-btn{
+    cursor: pointer;
+}
+.albums-container{
+    width: 80%;
+    margin:50px auto;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, 120px);
+    
+}
+
+.album{
+    background-color: rgb(230, 231, 232);
+    padding: 8px;
+    border: 2px solid black;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    font-size:x-large;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    /* Light grey */
+    border-top: 5px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin-left: 49.5%;
+    margin-top: -100px;
+    display: none;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
