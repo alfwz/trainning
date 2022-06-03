@@ -58,10 +58,15 @@ body{
     height: 10px;
     animation: spin 2s linear infinite;
     visibility: hidden;
-    margin: 0;
+    margin: 0 auto;
   }
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }      
+
+  .show-more{
+      display: flex;
+      margin: 0 auto
+  }
